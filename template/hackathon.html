@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Application</title>
+  
+</head>
+<body>
+    <!-- Navbar button -->
+    <div class="navbar">
+        <a href="home.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="orders.html">Orders</a>
+        <a href="cart.html">Cart</a>
+        
+        
+        <div id="auth-controls">
+          
+            <!-- Yaha se Login Form start hai-->
+            <div class="login-form" id="login-form">
+                <form action="/login" method="post">
+                    <input type="text" name="username" placeholder="Username" required>
+                    <input type="password" name="password" placeholder="Password" required>
+                    <button type="submit">Login</button>
+                </form>
+            </div>
+            <!--Ye Logout Button (extra add kr dya h bs)-->
+            <div class="logout-button" id="logout-button" style="display: none;">
+                <form action="/logout" method="post">
+                    <button type="submit">Logout</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Ye h Content -->
+    <div class="content">
+        <!-- Ye Product Section -->
+        <div id="products">
+            <h2>Products</h2>
+            <!-- and your Product details would be loaded here -->
+        </div>
+        
+        <!-- Ye h Order Section -->
+        <div id="orders">
+            <h2>Orders</h2>
+            <!-- And your Order details would be loaded here -->
+        </div>
+        
+        <!--Ye h hmara Cart Section -->
+        <div id="cart">
+            <h2>Cart</h2>
+            <!-- and your Cart details would be loaded here -->
+        </div>
+    </div>
+
+    
+</body>
+</html>
